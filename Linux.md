@@ -262,5 +262,99 @@ du -sh | sort -nr
 
 
 
+grep [options] pattern [file]
 
+grep在输入或指定的文件中查找包含匹配指定模式的字符的行
+
+-v 
+
+反向搜索，输出不匹配该模式的行
+
+-n 显示行号
+
+grep -e t -e f
+
+-e指定多个匹配模式
+
+
+
+压缩数据
+
+工具				文件拓展名			描述
+
+bzip2 			 .bz2			采用Burrows-Wheeler块排序文本压缩算法和霍夫曼编码
+
+compress		.Z				最初的Unix文件压缩工具（几乎不使用）
+
+gzip				.gz				GNU压缩工具，采用Lepel-Ziv编码
+
+zip					,zip			windows上的PKZIP工具的Unix实现
+
+gzip	压缩文件
+
+gzcat	哟你查看压缩过的文件
+
+gunzip	用来解压文件
+
+
+
+归档数据
+
+tar命令用来将文件写入到磁带设备上归档，也能把输出写出到文件里
+
+tar function [options]   object1   object2
+
+function
+
+功能	长名称	描述
+
+-A	 --concatenate	将一个已有tar归档文件追加到另一个已有tar归档文件
+
+-c	--cteate	 创建一个新的tar归档文件
+
+-d 	--diff	检查归档文件和文件系统的不同之处
+
+​		--delete	 从已有tar归档文件中删除
+
+-r	--apend	追加文件到已有tar归档文件末尾
+
+-t	 --list	追出已有tar文档文件文件的内容
+
+-u 	--update	将比tar归档文件中已有的同名文件新的文件追加到该tar归档文件中
+
+-x --extract从已有tar归档文件中提取文件
+
+options
+
+选项				描述
+
+-c dir			切换到指定目录
+
+-f file			输出结果到文件或设备file
+
+-j					将输出重定向给bzip2命令来压缩内容
+
+-p				保留所用文件权限
+
+-v				在处理文件时显示文件
+
+-z				将输出重定向给gzip命令来压缩内容
+
+tar -cvf test.tar	test/	test2/
+
+创建一个归档文件test.tat包含test和test2目录内容
+
+tar -tf test.tar
+
+列出文件test.tar的内容（但并不提取）
+
+tar -xvf	test.tar
+
+提取test.tar的内容
+
+.tgz是gzip压缩过的tar文件，可以用命令tar -zxvf filename.tgz 来解压
+
+
+
+## 5.理解shell
 
