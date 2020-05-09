@@ -77,7 +77,7 @@
 
 ### IA-32 System-Level Registers and Data Struction
 
-![IA-32 System-Level Registers and Data Struction](image/IA-32-System-Level-Registers-and-Data-Struction.png)
+![IA-32 System-Level Registers and Data Struction](image/IA 32-System-Level-Registers-and-Data-Struction.png)
 
 ### System-Level Registers and Data Structures in IA-32e Mode
 
